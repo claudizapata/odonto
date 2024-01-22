@@ -9,30 +9,44 @@
   }
   
   /* Style the header */
-  .header {
-    background-color: #f1f1f1;
-    padding: 2rem;
+  header {
+    margin: 0;
+    height: 40rem;
+    
+  }
+
+  .header{
     text-align: center;
     color: black;
+    background-color: #f1f1f1;
+    padding: 2rem;
+
   }
 
 /*Navbar total*/
 .topnav {
     overflow: hidden;
-    background-color: #13afc7;
+    background-color: transparent;
     padding: 1rem;
+    position: fixed;
+    transition: all 0.5s linear 0s;
+    width: 100%;
+    /*z-index: 1;*/
   }
-  
+  .cambiar-topnav{
+    background-color: #a7d4a3;
+}
+   
   /* Navbar links */
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     font-size: 2rem;
     text-align: center;
     padding: 2rem;
     text-decoration: none;
-    
+   
   }
   
   /* Links - change color on hover */
@@ -40,6 +54,7 @@
     background-color: #f1f1f1;
     color: rgb(62, 152, 122);
     font-weight: bold;
+    
   }
 .img__logo__ppal{
     border-radius: 30% 70% 90% 30% / 30% 30% 30% 70%;
@@ -70,7 +85,6 @@ figcaption {
 */
 
 .main_container{
-    margin-top: 3rem;
     background-attachment: fixed;
     background-position: center;
     width: 100%;
@@ -82,7 +96,7 @@ figcaption {
 .parrafo_container{
     display: flex;
     align-items: center;
-    
+    margin-bottom: 20rem;   
 }
 .parrafo_about{
     margin-right: 3rem;
@@ -95,6 +109,7 @@ figcaption {
     font-size: 3.5rem;
     background: #13afc7;
     color: white;
+    background-image: linear-gradient(to right  ,orange,yellow,green,violet);
 }
 
 .imagen_bucal{
@@ -153,14 +168,28 @@ figcaption {
     margin-bottom: 3rem;
     opacity: 0.5;
 }
+
+/*Transición imagen
+.img1{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: .7s ease-in-out all;
+}
+.img_visible{
+    opacity: 1;
+    transform: scale(1);
+}*/
+
+/***********/
+
 /*hasta acá el main*/
 
 
-hr.blue1{
-    border-top: 15px solid #13afc7;
+hr.green1{
+    border-top: 15px solid #098916;
 }
-hr.blue2{
-    border-top: 10px solid rgb(8, 24, 168);
+hr.green2{
+    border-top: 10px solid #a7d4a3;
 }
 footer{
     background-color: black;
